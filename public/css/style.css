@@ -1519,6 +1519,13 @@ p {
   color: var(--thirty-l);
   background-color: var(--thirty-m);
 }
+#summary .button {
+  margin: 1rem;
+}
+#question-header {
+  text-align: center !important;
+  margin: 2rem !important;
+}
 
 .queer {
   font-weight: bold;
