@@ -1092,9 +1092,6 @@ p {
     drop-shadow(0.03rem 0.05rem 0px var(--ten-m));
 }
 
-#team h3 {
-  color: var(--sixty);
-}
 
 #process h3 {
   color: var(--ten-d);
@@ -1466,9 +1463,52 @@ p {
 #team {
   z-index: 100;
   width: 100vw;
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 10vw;
+  padding-right: 10vw;
   background-color: var(--sixty-m);
+}
+
+#team h3 {
+  color: var(--sixty);
+}
+
+.member {
+  background-color: var(--ten);
+  text-align: left;
+  padding: 1rem;
+}
+#team .portrait-container h3 {
+  color: var(--ten-d);
+  margin: 0;
+  margin-left: 1rem;
+}
+#team .member p {
+  color: var(--ten-d);
+  margin: 0;
+  margin-left: 1rem;
+}
+.portrait-container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 0.5rem;
+  padding-top: 0;
+  margin-bottom: 0.5rem;
+  border-bottom: 0.25rem solid var(--ten-d);
+}
+
+.pet-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  width:80vw;
+  padding-left: 0;
+  padding-right: 0;
+  justify-content: center;
+}
+.pet-portrait {
+  width: 20vw;
+  min-width: 150px;
 }
 
 #summary {
@@ -1572,6 +1612,21 @@ p {
   ". fixables5 fixables6 fixables7 fixables8 .";
     grid-gap: 2rem;
   }
+  .member {
+    padding: 2rem;
+  }
+  #team .portrait-container h3 {
+    margin-left: 2rem;
+  }
+  #team .member p {
+    margin-left: 2rem;
+  }
+  .portrait-container {
+    padding: 1rem;
+    padding-top: 0;
+    margin-bottom: 1rem;
+  }
+
 
 }
 
