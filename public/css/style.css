@@ -339,8 +339,6 @@ body {
   background-color: var(--bg);
   font-size: 1.15rem;
   line-height: 1.5;
-  display: grid;
-  grid-template-columns: 1fr min(45rem, 90%) 1fr;
   margin: 0;
 }
 body > * {
@@ -1052,10 +1050,14 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 
 body ul {
   list-style-type: none;
+}
+body a {
+  font-weight: bold;
 }
 
 section {
@@ -1204,7 +1206,7 @@ p {
   padding: 0 5%;
   align-items: center;
   background-color: var(--thirty-m);
-  width: 100%;
+  width: 100vw;
 }
 
 .process-card {
@@ -1249,7 +1251,7 @@ p {
 
 #fixables {
   padding: 0;
-  width: 100%;
+  width: 100vw;
 }
 #fixables-grid {
   display: grid;
@@ -1260,13 +1262,13 @@ p {
     ". fixables3 fixables4 ."
     ". fixables7 fixables8 .";
   align-items: center;
-  width: 100%;
+  width: 100vw;
   color: var(--sixty-m);
   grid-gap: 2rem;
   z-index: 100;
 }
 #fixables-background {
-  width: 100%;
+  width: 100vw;
   height: 0;
   position: relative;
   animation: parallax linear;
@@ -1367,13 +1369,13 @@ p {
 
 #pricing {
   position: static;
-  width: 100%;
+  width: 100vw;
 }
 .pricing-card {
   z-index: 100;
   color: var(--ten-d);
   background-color: var(--ten);
-  width: 50vw;
+  width: 80vw;
 }
 #pricing-grid {
   display: grid;
@@ -1385,16 +1387,17 @@ p {
     ". pricing4 ."
     ". pricing5 .";
   align-items: center;
-  width: 100%;
+  width: 100vw;
   grid-gap: 2rem;
+}
+.price {
+  font-weight: bold;
 }
 
 #pricing1 {
-  width: 80vw;
   grid-area: pricing1;
 }
 #pricing2 {
-  margin-left: 30vw;
   grid-area: pricing2;
 }
 #pricing3 {
@@ -1409,7 +1412,7 @@ p {
 
 #vision {
   z-index: 100;
-  width: 100%;
+  width: 100vw;
   padding-left: 20%;
   padding-right: 20%;
   color: var(--thirty-d);
@@ -1432,7 +1435,7 @@ p {
 
 #team {
   z-index: 100;
-  width: 100%;
+  width: 100vw;
   padding-left: 20%;
   padding-right: 20%;
   background-color: var(--sixty-m);
@@ -1440,7 +1443,7 @@ p {
 
 #summary {
   z-index: 100;
-  width: 100%;
+  width: 100vw;
   padding-left: 20%;
   padding-right: 20%;
   color: var(--thirty-l);
@@ -1487,6 +1490,18 @@ p {
   }
   .process-card {
     width: 50vw;
+  }
+  .pricing-card {
+    width: 50vw;
+  }
+  #pricing1 {
+    width: 80vw;
+  }
+  #pricing2 {
+    margin-left: calc(30vw + 1rem);
+  }
+  #pricing4 {
+    margin-left: calc(30vw + 1rem);
   }
 }
 
