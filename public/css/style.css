@@ -1100,9 +1100,6 @@ p {
   color: var(--ten-d);
 }
 
-#pricing h3 {
-  color: var(--ten-d);
-}
 
 .card {
   padding: 1rem;
@@ -1390,8 +1387,19 @@ p {
   width: 100vw;
   grid-gap: 2rem;
 }
+.price-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .price {
   font-weight: bold;
+  font-size: 2rem;
+  margin-left: 1rem;
+}
+#pricing h3 {
+  color: var(--ten-d);
+  margin-top: 0;
 }
 
 #pricing1 {
