@@ -1400,18 +1400,22 @@ p {
 #pricing h3 {
   color: var(--ten-d);
   margin-top: 0;
+  padding-top: 1rem;
+  border-top: 0.25rem solid var(--ten-d);
 }
 
 #pricing1 {
   grid-area: pricing1;
 }
 #pricing2 {
+  border-radius: 0 2rem;
   grid-area: pricing2;
 }
 #pricing3 {
   grid-area: pricing3;
 }
 #pricing4 {
+  border-radius: 0 2rem;
   grid-area: pricing4;
 }
 #pricing5 {
@@ -1439,6 +1443,24 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
+  padding: 0 10vw;
+}
+#faq h3 {
+  text-align: left;
+  margin-left: -2rem;
+  color: var(--thirty);
+  font-size: 1.5rem;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.9);
+}
+#faq p {
+  color: var(--sixty);
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.9);
+  border-radius: 2rem;
+  padding: 1rem;
+  background-color: rgba(0,0,0,0.2);
+  box-shadow: 0 0 30px 15px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0 0 30px 15px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0 0 30px 15px rgba(0,0,0,0.2);
 }
 
 #team {
@@ -1460,7 +1482,7 @@ p {
 
 .queer {
   font-weight: bold;
-
+  text-shadow: 0 0 5px rgba(0,0,0,0.7);
 }
 .queer-r {
   color: #E40303 !important;
