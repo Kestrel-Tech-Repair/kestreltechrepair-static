@@ -255,7 +255,10 @@ textarea {
     "Nimbus Sans L", Roboto, "Noto Sans", "Segoe UI", Arial, Helvetica,
     "Helvetica Neue", sans-serif;
   --serif-font: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-  --mono-font: Consolas, Menlo, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  --mono-font: "Ubuntu Mono", Consolas, Menlo, Monaco, "Andale Mono", monospace;
+  --heading-font: "Nova Mono", "Ubuntu Mono", -apple-system, BlinkMacSystemFont, "Avenir Next", Avenir,
+    "Nimbus Sans L", Roboto, "Noto Sans", "Segoe UI", Arial, Helvetica,
+    "Helvetica Neue", sans-serif;
   --standard-border-radius: 0px;
   --border-width: 1px;
 
@@ -1051,6 +1054,16 @@ body {
   align-items: center;
   text-align: center;
   overflow-x: hidden; /* Hide horizontal scrollbar */
+  font-family: var(--mono-font);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
 }
 
 body ul {
@@ -1379,7 +1392,8 @@ p {
     ". pricing2 ."
     ". pricing3 ."
     ". pricing4 ."
-    ". pricing5 .";
+    ". pricing5 ."
+    ". pricing6 .";
   align-items: center;
   width: 100vw;
   grid-gap: 2rem;
@@ -1417,6 +1431,10 @@ p {
 }
 #pricing5 {
   grid-area: pricing5;
+}
+#pricing6 {
+  border-radius: 0 2rem;
+  grid-area: pricing6;
 }
 
 #vision {
@@ -1531,7 +1549,18 @@ p {
   max-width: 30vw;
 }
 
+.cat-name {
+  position: relative;
+  height: 0;
+  margin: 0;
+  top: -3vw;
+  text-shadow: 0 0 5px rgba(0,0,0,0.7), 0 0 5px rgba(0,0,0,0.7), 0 0 5px rgba(0,0,0,0.7), 0 0 5px rgba(0,0,0,0.7);
+  
+  color: var(--thirty-l);
+}
+
 .queer {
+  font-family: var(--heading-font);
   font-weight: bold;
   text-shadow: 0 0 5px rgba(0,0,0,0.7);
 }
@@ -1582,6 +1611,9 @@ p {
     margin-left: calc(30vw + 1rem);
   }
   #pricing4 {
+    margin-left: calc(30vw + 1rem);
+  }
+  #pricing6 {
     margin-left: calc(30vw + 1rem);
   }
 }
