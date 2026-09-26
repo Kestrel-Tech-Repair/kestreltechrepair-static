@@ -255,7 +255,10 @@ textarea {
     "Nimbus Sans L", Roboto, "Noto Sans", "Segoe UI", Arial, Helvetica,
     "Helvetica Neue", sans-serif;
   --serif-font: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-  --mono-font: Consolas, Menlo, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  --mono-font: "Ubuntu Mono", Consolas, Menlo, Monaco, "Andale Mono", monospace;
+  --heading-font: "Nova Mono", "Ubuntu Mono", -apple-system, BlinkMacSystemFont, "Avenir Next", Avenir,
+    "Nimbus Sans L", Roboto, "Noto Sans", "Segoe UI", Arial, Helvetica,
+    "Helvetica Neue", sans-serif;
   --standard-border-radius: 0px;
   --border-width: 1px;
 
@@ -1051,6 +1054,16 @@ body {
   align-items: center;
   text-align: center;
   overflow-x: hidden; /* Hide horizontal scrollbar */
+  font-family: var(--mono-font);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
 }
 
 body ul {
